@@ -3,6 +3,12 @@
 #include<string>
 #include<fstream>
 #include<cstdio>
+//#include <dos.h>
+//for sleep fuction
+#include <conio.h> 
+//C libs to use system function
+#include<stdio.h>
+#include<stdlib.h>
 
 using namespace std;
 
@@ -33,10 +39,15 @@ string mystrjust3;
 string mystrjust4;
 string mystrjust5;
 string mystrparnum;
-
+string mystr4;
+string mystr5;
+string mystr6;
+string mystr7;
+string mystr8;
 
 int main()
 {
+	system("color 02");
 	cout << " |||||	   ||||| " << endl;
 	cout << " |   |	   |   | " << endl;
 	cout << " |||||	   ||||| " << endl;
@@ -288,16 +299,15 @@ int main()
 		getline(cin, mystrhrcolour2);
 	} 	
 	
-	loop:
+	loop2:
 	cout << "How many paragraphs do you want?(Max is five)" << endl;
 	getline(cin, mystrparnum);
 	if (mystrparnum > "5")
 		{
-			goto loop;
+			goto loop2;
 		}	
 	if (mystrparnum == "1")
 		{	
-			string mystr4;
 			cout << "Please type the first paragraph:" << endl;
 			getline(cin, mystr4);
 		
@@ -313,9 +323,8 @@ int main()
 				}
 		}
 
-	if (mystrparnum == "5")
+		if (mystrparnum == "2")
 		{	
-			string mystr4;
 			cout << "Please type the first paragraph:" << endl;
 			getline(cin, mystr4);
 		
@@ -329,7 +338,37 @@ int main()
 					cout << "Right" << endl;
 					getline(cin, mystrjust);
 				}
-			string mystr5;
+			
+			cout << "Please type the Second paragraph:" << endl;
+			getline(cin, mystr5);
+		
+			string mystr5_1;
+			cout << "Do you want to justify the paragrahp?" << endl;
+			getline(cin, mystr5_1);
+			if(mystr5_1 == "yes")
+				{
+					cout << "Left" << endl;
+					cout << "Center" << endl;
+					cout << "Right" << endl;
+					getline(cin, mystrjust2);
+				}
+		}
+
+		if (mystrparnum == "3")
+		{	
+			cout << "Please type the first paragraph:" << endl;
+			getline(cin, mystr4);
+		
+			string mystr4_1;
+			cout << "Do you want to justify the paragrahp?" << endl;
+			getline(cin, mystr4_1);
+			if(mystr4_1 == "yes")
+				{
+					cout << "Left" << endl;
+					cout << "Center" << endl;
+					cout << "Right" << endl;
+					getline(cin, mystrjust);
+				}
 			cout << "Please type the first paragraph:" << endl;
 			getline(cin, mystr5);
 		
@@ -343,8 +382,6 @@ int main()
 					cout << "Right" << endl;
 					getline(cin, mystrjust2);
 				}
-
-string mystr6;
 			cout << "Please type the first paragraph:" << endl;
 			getline(cin, mystr6);
 		
@@ -358,8 +395,49 @@ string mystr6;
 					cout << "Right" << endl;
 					getline(cin, mystrjust2);
 				}
+		}
 
-string mystr7;
+		if (mystrparnum == "4")
+		{	
+			cout << "Please type the first paragraph:" << endl;
+			getline(cin, mystr4);
+		
+			string mystr4_1;
+			cout << "Do you want to justify the paragrahp?" << endl;
+			getline(cin, mystr4_1);
+			if(mystr4_1 == "yes")
+				{
+					cout << "Left" << endl;
+					cout << "Center" << endl;
+					cout << "Right" << endl;
+					getline(cin, mystrjust);
+				}
+			cout << "Please type the first paragraph:" << endl;
+			getline(cin, mystr5);
+		
+			string mystr5_1;
+			cout << "Do you want to justify the paragrahp?" << endl;
+			getline(cin, mystr5_1);
+			if(mystr5_1 == "yes")
+				{
+					cout << "Left" << endl;
+					cout << "Center" << endl;
+					cout << "Right" << endl;
+					getline(cin, mystrjust2);
+				}
+			cout << "Please type the first paragraph:" << endl;
+			getline(cin, mystr6);
+		
+			string mystr6_1;
+			cout << "Do you want to justify the paragrahp?" << endl;
+			getline(cin, mystr6_1);
+			if(mystr6_1 == "yes")
+				{
+					cout << "Left" << endl;
+					cout << "Center" << endl;
+					cout << "Right" << endl;
+					getline(cin, mystrjust2);
+				}
 			cout << "Please type the first paragraph:" << endl;
 			getline(cin, mystr7);
 		
@@ -373,12 +451,27 @@ string mystr7;
 					cout << "Right" << endl;
 					getline(cin, mystrjust2);
 				}
+		}
 
-string mystr5;
+		if (mystrparnum == "5")
+		{	
+			cout << "Please type the first paragraph:" << endl;
+			getline(cin, mystr4);
+		
+			string mystr4_1;
+			cout << "Do you want to justify the paragrahp?" << endl;
+			getline(cin, mystr4_1);
+			if(mystr4_1 == "yes")
+				{
+					cout << "Left" << endl;
+					cout << "Center" << endl;
+					cout << "Right" << endl;
+					getline(cin, mystrjust);
+				}
 			cout << "Please type the first paragraph:" << endl;
 			getline(cin, mystr5);
 		
-			string mystr4_1;
+			string mystr5_1;
 			cout << "Do you want to justify the paragrahp?" << endl;
 			getline(cin, mystr5_1);
 			if(mystr5_1 == "yes")
@@ -388,14 +481,53 @@ string mystr5;
 					cout << "Right" << endl;
 					getline(cin, mystrjust2);
 				}
+			cout << "Please type the first paragraph:" << endl;
+			getline(cin, mystr6);
+		
+			string mystr6_1;
+			cout << "Do you want to justify the paragrahp?" << endl;
+			getline(cin, mystr6_1);
+			if(mystr6_1 == "yes")
+				{
+					cout << "Left" << endl;
+					cout << "Center" << endl;
+					cout << "Right" << endl;
+					getline(cin, mystrjust2);
+				}
+			cout << "Please type the first paragraph:" << endl;
+			getline(cin, mystr7);
+		
+			string mystr7_1;
+			cout << "Do you want to justify the paragrahp?" << endl;
+			getline(cin, mystr7_1);
+			if(mystr7_1 == "yes")
+				{
+					cout << "Left" << endl;
+					cout << "Center" << endl;
+					cout << "Right" << endl;
+					getline(cin, mystrjust2);
+				}
+			cout << "Please type the first paragraph:" << endl;
+			getline(cin, mystr8);
+		
+			string mystr8_1;
+			cout << "Do you want to justify the paragrahp?" << endl;
+			getline(cin, mystr8_1);
+			if(mystr5_1 == "yes")
+				{
+					cout << "Left" << endl;
+					cout << "Center" << endl;
+					cout << "Right" << endl;
+					getline(cin, mystrjust2);
+				}
 		}
-	string mystr5;
+	string mystr10;
 	cout << "Are you done?" << endl;
 	cout << "Yes or No" << endl;
-	getline(cin, mystr5);
+	getline(cin, mystr10);
 	
 //writting of the main html file
-	 if ( mystr5 == "yes")
+	 if ( mystr10 == "yes")
 	 {
 	 ofstream myfile("index.html");
 		if (myfile.is_open())
@@ -461,8 +593,11 @@ string mystr5;
 				if (mystrimg == "yes")
 					{
 						myfile << "<img src= " << mystrimgname;
+						myfile << " ";						
 						myfile << "width = " << mystrimgwid;
+						myfile << " ";
 						myfile << "height = " << mystrimgheight;
+						myfile << " ";
 						myfile << "alt = " << mystralttext;
 						myfile << "/>" << endl;
 					}
@@ -614,7 +749,7 @@ string mystr5;
 								myfile << ">" << endl;
 							}
 						myfile << "<button>" << endl;
-						myfile << mystrbut1 << endl;
+						myfile << mystrbut2 << endl;
 						myfile << "</button>" << endl;
 						if(mystrref == "yes")
 							{
@@ -784,7 +919,7 @@ string mystr5;
 							}
 					}
 
-//	line_horizontial2
+//	line_horizontial
 				if (mystrhrcolour2 == "1")
 					{
 						myfile << "<hr color = #000000/>" << endl;
@@ -857,7 +992,7 @@ string mystr5;
 						myfile << "</p>" << endl;
 					}
 					
-					if(mystrparnum == "6")
+					if(mystrparnum == "5")
 					{				
 						if(mystrjust == "center")
 							{
@@ -880,7 +1015,7 @@ string mystr5;
 						myfile << mystr4 << endl;
 						myfile << "</p>" << endl;
 
-if(mystrjust2 == "center")
+						if(mystrjust2 == "center")
 							{
 								myfile << "<p";		
 								myfile << "align = center";
@@ -898,10 +1033,10 @@ if(mystrjust2 == "center")
 							myfile << "align = right";
 							myfile << ">" << endl;
 							}
-						myfile << mystr4 << endl;
+						myfile << mystr5 << endl;
 						myfile << "</p>" << endl;
 
-if(mystrjust3 == "center")
+						if(mystrjust3 == "center")
 							{
 								myfile << "<p";		
 								myfile << "align = center";
@@ -919,10 +1054,10 @@ if(mystrjust3 == "center")
 							myfile << "align = right";
 							myfile << ">" << endl;
 							}
-						myfile << mystr4 << endl;
+						myfile << mystr6 << endl;
 						myfile << "</p>" << endl;
 
-if(mystrjust4 == "center")
+						if(mystrjust4 == "center")
 							{
 								myfile << "<p";		
 								myfile << "align = center";
@@ -940,10 +1075,10 @@ if(mystrjust4 == "center")
 							myfile << "align = right";
 							myfile << ">" << endl;
 							}
-						myfile << mystr4 << endl;
+						myfile << mystr7 << endl;
 						myfile << "</p>" << endl;
-
-if(mystrjust5 == "center")
+	
+						if(mystrjust5 == "center")
 							{
 								myfile << "<p";		
 								myfile << "align = center";
@@ -961,18 +1096,16 @@ if(mystrjust5 == "center")
 							myfile << "align = right";
 							myfile << ">" << endl;
 							}
-						myfile << mystr4 << endl;
+						myfile << mystr8 << endl;
 						myfile << "</p>" << endl;
-					}
-	
-
-	
-	
-	
+					}	
 				myfile << "</body>" << endl;
 				myfile << "</html>" << endl;
 			}
 	}
-	 
+	if(mystr10 != "yes")
+		{
+			main();		
+		}
 	 return 0;
-}
+	}
