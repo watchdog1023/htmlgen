@@ -1,4 +1,4 @@
-// html gen
+//html gen
 #include<iostream>
 #include<string>
 #include<fstream>
@@ -44,9 +44,13 @@ string mystr5;
 string mystr6;
 string mystr7;
 string mystr8;
+string mystriconchoice;
+string mystricon;
 
 int main()
 {
+	//Use Before Every Input:
+	//cout << "HTML_Gen>";
 	system("color 02");
 	cout << " |||||	   ||||| " << endl;
 	cout << " |   |	   |   | " << endl;
@@ -60,7 +64,18 @@ int main()
 
 	string mystr;
 	cout << "What is the webpage name? " << endl;
+	cout << "HTML_Gen>";
 	getline(cin, mystr);
+	
+	cout << "Do you want to display an icon for your webpage?" << endl;
+	cout << "HTML_Gen>";
+	getline(cin, mystriconchoice);
+	if(mystriconchoice == "yes")
+		{
+			cout << "Please write the name of the image file(with extension)" << endl;
+			cout << "HTML_Gen>";
+			getline(cin, mystricon);
+		}
 
 	string mystr2;
 	cout << "What colour do you want the page to be?" << endl;
@@ -78,30 +93,37 @@ int main()
 	cout << "11.Pink" << endl;//#ff00ff
 	cout << "12.No Colour" << endl;	
 	cout << "Enter the number only" << endl;
+	cout << "HTML_Gen>";
 	getline(cin, mystr2);
 
 	string mystrimg;
 	cout << "Do you want to add an image in the top left of the page?" << endl;
+	cout << "HTML_Gen>";
 	getline(cin, mystrimg);
 	
 	if (mystrimg == "yes")
 	{
 		cout << "Please put the image in the current folder" << endl;		
 		cout << "Type the name of the image file with exetensing eg .png,.jpeg etc:" << endl;
+		cout << "HTML_Gen>";
 		getline(cin, mystrimgname);
 
 		cout << "Enter the width:" << endl;
+		cout << "HTML_Gen>";
 		getline(cin, mystrimgwid);
 	
 		cout << "Enter the Height:" << endl;
+		cout << "HTML_Gen>";
 		getline(cin, mystrimgheight);
 
 		cout << "Enter the text that will be shown if the image does not load:" << endl;
+		cout << "HTML_Gen>";
 		getline(cin, mystralttext);
 	}
 
 	string mystrhr;	
 	cout << "Do you want to add a horizontal line at the top of the page?" << endl;
+	cout << "HTML_Gen>";
 	getline(cin,mystrhr);
 
 	if (mystrhr == "yes")
@@ -120,16 +142,19 @@ int main()
 		cout << "10.Orange" << endl;//#ff9900
 		cout << "11.Pink" << endl;//#ff00ff		
 		cout << "Enter the number only" << endl;
+		cout << "HTML_Gen>";
 		getline(cin, mystrhrcolour);
 	}
 
 	string mystrbutton;
 	cout << "Do you want buttons at the top of the page?" << endl;
+	cout << "HTML_Gen>";
 	getline(cin, mystrbutton);
 	if (mystrbutton == "yes")
 	{
 			loop:			
 				cout << "How many buttons do you want?(Max is 6)" << endl;
+				cout << "HTML_Gen>";
 				getline(cin, mystrbuttonnum);
 				if(mystrbuttonnum > "6")
 				{
@@ -140,137 +165,185 @@ int main()
 		if(mystrbuttonnum == "1")
 		{
 			cout << "Enter what will be displayed on the button" << endl;
+			cout << "HTML_Gen>";
 			getline(cin, mystrbut1);
 			string mystrref;
 			cout << "Do you want to add a hyperlink to the button?" << endl;
+			cout << "HTML_Gen>";
 			getline(cin, mystrref);
 				if(mystrref == "yes")
 				{
 					cout << "Enter the hyperlink:" << endl;
+					cout << "HTML_Gen>";
 					getline(cin, myref1);
 				}
 		}	
 		if(mystrbuttonnum == "2")
 		{
 			cout << "Enter what will be displayed on the button" << endl;
+			cout << "HTML_Gen>";
 			getline(cin, mystrbut1);
 			cout << "Enter what will be displayed on the button" << endl;
+			cout << "HTML_Gen>";
 			getline(cin, mystrbut2);
 			string mystrref;
 			cout << "Do you want to add a hyperlink to the button?" << endl;
+			cout << "HTML_Gen>";
 			getline(cin, mystrref);
 				if(mystrref == "yes")
 				{
 					cout << "Enter the hyperlink:" << endl;
+					cout << "HTML_Gen>";
 					getline(cin, myref1);
 					cout << "Enter the hyperlink:" << endl;
+					cout << "HTML_Gen>";
 					getline(cin, myref2);
 				}
 		}
 		if(mystrbuttonnum == "3")
 		{
 			cout << "Enter what will be displayed on the button" << endl;
+			cout << "HTML_Gen>";
 			getline(cin, mystrbut1);
 			cout << "Enter what will be displayed on the button" << endl;
+			cout << "HTML_Gen>";
 			getline(cin, mystrbut2);
 			cout << "Enter what will be displayed on the button" << endl;
+			cout << "HTML_Gen>";
 			getline(cin, mystrbut3);
 			string mystrref;
 			cout << "Do you want to add a hyperlink to the button?" << endl;
+			cout << "HTML_Gen>";
 			getline(cin, mystrref);
 				if(mystrref == "yes")
 				{
 					cout << "Enter the hyperlink:" << endl;
+					cout << "HTML_Gen>";
 					getline(cin, myref1);
 					cout << "Enter the hyperlink:" << endl;
+					cout << "HTML_Gen>";
 					getline(cin, myref2);
 					cout << "Enter the hyperlink:" << endl;
+					cout << "HTML_Gen>";
 					getline(cin, myref3);
 				}		
 		}
 		if(mystrbuttonnum == "4")
 		{
 			cout << "Enter what will be displayed on the button" << endl;
+			cout << "HTML_Gen>";
 			getline(cin, mystrbut1);
 			cout << "Enter what will be displayed on the button" << endl;
+			cout << "HTML_Gen>";
 			getline(cin, mystrbut2);
 			cout << "Enter what will be displayed on the button" << endl;
+			cout << "HTML_Gen>";
 			getline(cin, mystrbut3);
 			cout << "Enter what will be displayed on the button" << endl;
+			cout << "HTML_Gen>";
 			getline(cin, mystrbut4);
 			string mystrref;
 			cout << "Do you want to add a hyperlink to the button?" << endl;
+			cout << "HTML_Gen>";
 			getline(cin, mystrref);
 				if(mystrref == "yes")
 				{
 					cout << "Enter the hyperlink:" << endl;
+					cout << "HTML_Gen>";
 					getline(cin, myref1);
 					cout << "Enter the hyperlink:" << endl;
+					cout << "HTML_Gen>";
 					getline(cin, myref2);
 					cout << "Enter the hyperlink:" << endl;
+					cout << "HTML_Gen>";
 					getline(cin, myref3);
 					cout << "Enter the hyperlink:" << endl;
+					cout << "HTML_Gen>";
 					getline(cin, myref4);
 				}
 		}
 		if(mystrbuttonnum == "5")
 		{
 			cout << "Enter what will be displayed on the button" << endl;
+			cout << "HTML_Gen>";
 			getline(cin, mystrbut1);
 			cout << "Enter what will be displayed on the button" << endl;
+			cout << "HTML_Gen>";
 			getline(cin, mystrbut2);
 			cout << "Enter what will be displayed on the button" << endl;
+			cout << "HTML_Gen>";
 			getline(cin, mystrbut3);
 			cout << "Enter what will be displayed on the button" << endl;
+			cout << "HTML_Gen>";
 			getline(cin, mystrbut4);
 			cout << "Enter what will be displayed on the button" << endl;
+			cout << "HTML_Gen>";
 			getline(cin, mystrbut5);string mystrref;
 			cout << "Do you want to add a hyperlink to the button?" << endl;
+			cout << "HTML_Gen>";
 			getline(cin, mystrref);
 				if(mystrref == "yes")
 				{
 					cout << "Enter the hyperlink:" << endl;
+					cout << "HTML_Gen>";
 					getline(cin, myref1);
 					cout << "Enter the hyperlink:" << endl;
+					cout << "HTML_Gen>";
 					getline(cin, myref2);
 					cout << "Enter the hyperlink:" << endl;
+					cout << "HTML_Gen>";
 					getline(cin, myref3);
 					cout << "Enter the hyperlink:" << endl;
+					cout << "HTML_Gen>";
 					getline(cin, myref4);
 					cout << "Enter the hyperlink:" << endl;
+					cout << "HTML_Gen>";
 					getline(cin, myref5);
 				}
 		}
 		if(mystrbuttonnum == "6")
 		{
 			cout << "Enter what will be displayed on the button" << endl;
+			cout << "HTML_Gen>";
 			getline(cin, mystrbut1);
 			cout << "Enter what will be displayed on the button" << endl;
+			cout << "HTML_Gen>";
 			getline(cin, mystrbut2);
 			cout << "Enter what will be displayed on the button" << endl;
+			cout << "HTML_Gen>";
 			getline(cin, mystrbut3);
 			cout << "Enter what will be displayed on the button" << endl;
+			cout << "HTML_Gen>";
 			getline(cin, mystrbut4);
 			cout << "Enter what will be displayed on the button" << endl;
+			cout << "HTML_Gen>";
 			getline(cin, mystrbut5);
 			cout << "Enter what will be displayed on the button" << endl;
+			cout << "HTML_Gen>";
 			getline(cin, mystrbut6);
 			string mystrref;
 			cout << "Do you want to add a hyperlink to the button?" << endl;
+			cout << "HTML_Gen>";
 			getline(cin, mystrref);
 				if(mystrref == "yes")
 				{
 					cout << "Enter the hyperlink:" << endl;
+					cout << "HTML_Gen>";
 					getline(cin, myref1);
 					cout << "Enter the hyperlink:" << endl;
+					cout << "HTML_Gen>";
 					getline(cin, myref2);
 					cout << "Enter the hyperlink:" << endl;
+					cout << "HTML_Gen>";
 					getline(cin, myref3);
 					cout << "Enter the hyperlink:" << endl;
+					cout << "HTML_Gen>";
 					getline(cin, myref4);
 					cout << "Enter the hyperlink:" << endl;
+					cout << "HTML_Gen>";
 					getline(cin, myref5);
 					cout << "Enter the hyperlink:" << endl;
+					cout << "HTML_Gen>";
 					getline(cin, myref6);
 				}
 		}
@@ -278,6 +351,7 @@ int main()
 	
 	string mystrhr2;	
 	cout << "Do you want to add a horizontal line after buttons?" << endl;
+	cout << "HTML_Gen>";
 	getline(cin,mystrhr2);
 
 	if (mystrhr2 == "yes")
@@ -296,11 +370,13 @@ int main()
 		cout << "10.Orange" << endl;//#ff9900
 		cout << "11.Pink" << endl;//#ff00ff		
 		cout << "Enter the number only" << endl;
+		cout << "HTML_Gen>";
 		getline(cin, mystrhrcolour2);
 	} 	
 	
 	loop2:
 	cout << "How many paragraphs do you want?(Max is five)" << endl;
+	cout << "HTML_Gen>";
 	getline(cin, mystrparnum);
 	if (mystrparnum > "5")
 		{
@@ -309,16 +385,19 @@ int main()
 	if (mystrparnum == "1")
 		{	
 			cout << "Please type the first paragraph:" << endl;
+			cout << "HTML_Gen>";
 			getline(cin, mystr4);
 		
 			string mystr4_1;
 			cout << "Do you want to justify the paragrahp?" << endl;
+			cout << "HTML_Gen>";
 			getline(cin, mystr4_1);
 			if(mystr4_1 == "yes")
 				{
 					cout << "Left" << endl;
 					cout << "Center" << endl;
 					cout << "Right" << endl;
+					cout << "HTML_Gen>";
 					getline(cin, mystrjust);
 				}
 		}
@@ -326,30 +405,36 @@ int main()
 		if (mystrparnum == "2")
 		{	
 			cout << "Please type the first paragraph:" << endl;
+			cout << "HTML_Gen>";
 			getline(cin, mystr4);
 		
 			string mystr4_1;
 			cout << "Do you want to justify the paragrahp?" << endl;
+			cout << "HTML_Gen>";
 			getline(cin, mystr4_1);
 			if(mystr4_1 == "yes")
 				{
 					cout << "Left" << endl;
 					cout << "Center" << endl;
 					cout << "Right" << endl;
+					cout << "HTML_Gen>";
 					getline(cin, mystrjust);
 				}
 			
 			cout << "Please type the Second paragraph:" << endl;
+			cout << "HTML_Gen>";
 			getline(cin, mystr5);
 		
 			string mystr5_1;
 			cout << "Do you want to justify the paragrahp?" << endl;
+			cout << "HTML_Gen>";
 			getline(cin, mystr5_1);
 			if(mystr5_1 == "yes")
 				{
 					cout << "Left" << endl;
 					cout << "Center" << endl;
 					cout << "Right" << endl;
+					cout << "HTML_Gen>";
 					getline(cin, mystrjust2);
 				}
 		}
@@ -357,42 +442,51 @@ int main()
 		if (mystrparnum == "3")
 		{	
 			cout << "Please type the first paragraph:" << endl;
+			cout << "HTML_Gen>";
 			getline(cin, mystr4);
 		
 			string mystr4_1;
 			cout << "Do you want to justify the paragrahp?" << endl;
+			cout << "HTML_Gen>";
 			getline(cin, mystr4_1);
 			if(mystr4_1 == "yes")
 				{
 					cout << "Left" << endl;
 					cout << "Center" << endl;
 					cout << "Right" << endl;
+					cout << "HTML_Gen>";
 					getline(cin, mystrjust);
 				}
 			cout << "Please type the first paragraph:" << endl;
+			cout << "HTML_Gen>";
 			getline(cin, mystr5);
 		
 			string mystr5_1;
 			cout << "Do you want to justify the paragrahp?" << endl;
+			cout << "HTML_Gen>";
 			getline(cin, mystr5_1);
 			if(mystr5_1 == "yes")
 				{
 					cout << "Left" << endl;
 					cout << "Center" << endl;
 					cout << "Right" << endl;
+					cout << "HTML_Gen>";
 					getline(cin, mystrjust2);
 				}
 			cout << "Please type the first paragraph:" << endl;
+			cout << "HTML_Gen>";
 			getline(cin, mystr6);
 		
 			string mystr6_1;
 			cout << "Do you want to justify the paragrahp?" << endl;
+			cout << "HTML_Gen>";
 			getline(cin, mystr6_1);
 			if(mystr6_1 == "yes")
 				{
 					cout << "Left" << endl;
 					cout << "Center" << endl;
 					cout << "Right" << endl;
+					cout << "HTML_Gen>";
 					getline(cin, mystrjust2);
 				}
 		}
@@ -400,55 +494,67 @@ int main()
 		if (mystrparnum == "4")
 		{	
 			cout << "Please type the first paragraph:" << endl;
+			cout << "HTML_Gen>";
 			getline(cin, mystr4);
 		
 			string mystr4_1;
 			cout << "Do you want to justify the paragrahp?" << endl;
+			cout << "HTML_Gen>";
 			getline(cin, mystr4_1);
 			if(mystr4_1 == "yes")
 				{
 					cout << "Left" << endl;
 					cout << "Center" << endl;
 					cout << "Right" << endl;
+					cout << "HTML_Gen>";
 					getline(cin, mystrjust);
 				}
 			cout << "Please type the first paragraph:" << endl;
+			cout << "HTML_Gen>";
 			getline(cin, mystr5);
 		
 			string mystr5_1;
 			cout << "Do you want to justify the paragrahp?" << endl;
+			cout << "HTML_Gen>";
 			getline(cin, mystr5_1);
 			if(mystr5_1 == "yes")
 				{
 					cout << "Left" << endl;
 					cout << "Center" << endl;
 					cout << "Right" << endl;
+					cout << "HTML_Gen>";
 					getline(cin, mystrjust2);
 				}
 			cout << "Please type the first paragraph:" << endl;
+			cout << "HTML_Gen>";
 			getline(cin, mystr6);
 		
 			string mystr6_1;
 			cout << "Do you want to justify the paragrahp?" << endl;
+			cout << "HTML_Gen>";
 			getline(cin, mystr6_1);
 			if(mystr6_1 == "yes")
 				{
 					cout << "Left" << endl;
 					cout << "Center" << endl;
 					cout << "Right" << endl;
+					cout << "HTML_Gen>";
 					getline(cin, mystrjust2);
 				}
 			cout << "Please type the first paragraph:" << endl;
+			cout << "HTML_Gen>";
 			getline(cin, mystr7);
 		
 			string mystr7_1;
 			cout << "Do you want to justify the paragrahp?" << endl;
+			cout << "HTML_Gen>";
 			getline(cin, mystr7_1);
 			if(mystr7_1 == "yes")
 				{
 					cout << "Left" << endl;
 					cout << "Center" << endl;
 					cout << "Right" << endl;
+					cout << "HTML_Gen>";
 					getline(cin, mystrjust2);
 				}
 		}
@@ -456,80 +562,96 @@ int main()
 		if (mystrparnum == "5")
 		{	
 			cout << "Please type the first paragraph:" << endl;
+			cout << "HTML_Gen>";
 			getline(cin, mystr4);
 		
 			string mystr4_1;
 			cout << "Do you want to justify the paragrahp?" << endl;
+			cout << "HTML_Gen>";
 			getline(cin, mystr4_1);
 			if(mystr4_1 == "yes")
 				{
 					cout << "Left" << endl;
 					cout << "Center" << endl;
 					cout << "Right" << endl;
+					cout << "HTML_Gen>";
 					getline(cin, mystrjust);
 				}
 			cout << "Please type the first paragraph:" << endl;
+			cout << "HTML_Gen>";
 			getline(cin, mystr5);
 		
 			string mystr5_1;
 			cout << "Do you want to justify the paragrahp?" << endl;
+			cout << "HTML_Gen>";
 			getline(cin, mystr5_1);
 			if(mystr5_1 == "yes")
 				{
 					cout << "Left" << endl;
 					cout << "Center" << endl;
 					cout << "Right" << endl;
+					cout << "HTML_Gen>";
 					getline(cin, mystrjust2);
 				}
 			cout << "Please type the first paragraph:" << endl;
+			cout << "HTML_Gen>";
 			getline(cin, mystr6);
 		
 			string mystr6_1;
 			cout << "Do you want to justify the paragrahp?" << endl;
+			cout << "HTML_Gen>";
 			getline(cin, mystr6_1);
 			if(mystr6_1 == "yes")
 				{
 					cout << "Left" << endl;
 					cout << "Center" << endl;
 					cout << "Right" << endl;
+					cout << "HTML_Gen>";
 					getline(cin, mystrjust2);
 				}
 			cout << "Please type the first paragraph:" << endl;
+			cout << "HTML_Gen>";
 			getline(cin, mystr7);
 		
 			string mystr7_1;
 			cout << "Do you want to justify the paragrahp?" << endl;
+			cout << "HTML_Gen>";
 			getline(cin, mystr7_1);
 			if(mystr7_1 == "yes")
 				{
 					cout << "Left" << endl;
 					cout << "Center" << endl;
 					cout << "Right" << endl;
+					cout << "HTML_Gen>";
 					getline(cin, mystrjust2);
 				}
 			cout << "Please type the first paragraph:" << endl;
+			cout << "HTML_Gen>";
 			getline(cin, mystr8);
 		
 			string mystr8_1;
 			cout << "Do you want to justify the paragrahp?" << endl;
+			cout << "HTML_Gen>";
 			getline(cin, mystr8_1);
 			if(mystr5_1 == "yes")
 				{
 					cout << "Left" << endl;
 					cout << "Center" << endl;
 					cout << "Right" << endl;
+					cout << "HTML_Gen>";
 					getline(cin, mystrjust2);
 				}
 		}
 	string mystr10;
 	cout << "Are you done?" << endl;
 	cout << "Yes or No" << endl;
+	cout << "HTML_Gen>";
 	getline(cin, mystr10);
 	
 //writting of the main html file
 	 if ( mystr10 == "yes")
 	 {
-	 ofstream myfile("index.html");
+		ofstream myfile("index.html");
 		if (myfile.is_open())
 			{
 				myfile << "<!--The following website was generated by HTML gen-->" << endl;
@@ -539,6 +661,11 @@ int main()
 				myfile << "<title>" <<	endl;
 				myfile << mystr << endl;
 				myfile << "</title>" << endl;
+				if(mystriconchoice == "yes")
+				{
+					myfile << "<link rel=icon href=" << mystricon;
+					myfile << " />" << endl;
+				}
 				myfile << "</head>" << endl;
 // body			
 				if (mystr2 == "1")
