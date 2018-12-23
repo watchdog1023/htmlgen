@@ -5,7 +5,11 @@
 #include<cstdio>
 //#include <dos.h>
 //for sleep fuction
-#include <conio.h> 
+#ifdef WIN32
+	#include <conio.h> 
+#else
+	#include <curses.h>
+#endif
 //C libs to use system function
 #include<stdio.h>
 #include<stdlib.h>
