@@ -2,4 +2,4 @@ language: cpp
 compiler: gcc
 script:
   - sudo apt-get install libncurses5-dev libncursesw5-dev -y
-  - g++ -v -o html htmlgen.cpp && ./html
+  - g++ -v -o html htmlgen.cpp
