@@ -1,0 +1,4 @@
+language: cpp
+compiler: gcc
+script:
+  - g++ -v -o html htmlgen.cpp && ./html
